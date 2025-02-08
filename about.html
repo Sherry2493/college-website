@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./main.css" />
+
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+  <body>
+    <!-- -------------------SUB-HEADER SECTION--------------------- -->
+
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"
+          ><img src="./eduford_img/eduford_img/logo.png" alt="logo"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./course.html">COURSE</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+
+      
+    </section>
+    <!-- -------------------ABOUT US CONTENT-------------------------- -->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>We are the World's Largest University</h1>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis.</p>
+          <a class="hero-btn red-btn" href="">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="./eduford_img/eduford_img/about.jpg" >
+        </div>
+      </div>
+    </section>
+   
+       <!-- -----------------FOOTER--------------------------- -->
+        <section class="footer">
+          <h4>About Us</h4>
+          <p>Lorem ipsum dolor sit amet. Ut molestiae quae et tenetur maiores in beatae<br> voluptatem non internos voluptatem ut molestiae corporis et similique</p>
+          <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+
+          </div>
+          <p>Made with   <i class="fa fa-heart"></i>  by Sherry Kaushal</p>
+
+        </section>
+    <!-- -------------------Javascript------------------------ -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showmenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hidemenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
